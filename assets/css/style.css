@@ -555,7 +555,7 @@ nav a:hover {
   }
 }
 .p__project1 {
-  background-image: url("../images/projects/bike_project.png");
+  background-image: url("../../images/projects/bike_project.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -565,7 +565,7 @@ nav a:hover {
   }
 }
 .p__project2 {
-  background-image: url("../images/projects/ecommerce_project.jpg");
+  background-image: url("../../images/projects/ecommerce_project.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -575,7 +575,7 @@ nav a:hover {
   }
 }
 .p__project3 {
-  background-image: url("../images/projects/undernutrition_project.jpeg");
+  background-image: url("../../images/projects/undernutrition_project.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -585,7 +585,7 @@ nav a:hover {
   }
 }
 .p__project4 {
-  background-image: url("../images/projects/weratedogs_project.jpg");
+  background-image: url("../../images/projects/weratedogs_project.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -595,7 +595,7 @@ nav a:hover {
   }
 }
 .p__project5 {
-  background-image: url("../images/projects/co2_emission_project.jpg");
+  background-image: url("../../images/projects/co2_emission_project.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -605,7 +605,7 @@ nav a:hover {
   }
 }
 .p__project6 {
-  background-image: url("../images/projects/app_project.jpg");
+  background-image: url("../../images/projects/app_project.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
