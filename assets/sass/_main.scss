@@ -1,0 +1,37 @@
+//======================================
+// Import all the partials - The order is important
+//======================================
+
+// Import the new math.div function for divisions
+@use "sass:math"; 
+
+// 1-Import utils partials
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+
+// 2- Import Vendor sheets
+    // Nothing for the moment here...
+
+// 3- Import Base partials
+@import "./base/base";
+
+// 4- Import Components partials
+@import "./components/buttons";
+@import "./components/hamb_menu";
+
+// 5- Import Layout partials
+@import "./layout/header";
+@import "./layout/nav";
+@import "./layout/containers";
+@import "./layout/form";
+@import "./layout/presentation";
+@import "./layout/footer";
+// 6- Import Pages partials
+@import "./pages/home";
+@import "./pages/projects";
+@import "./pages/about";
+@import "./pages/contact";
+
+// 7- Import Themes partials
+    // Nothing for the moment here

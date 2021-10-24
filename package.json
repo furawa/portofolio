@@ -1,0 +1,16 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Frank Pouassi portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch assets/sass/_main.scss assets/css/style.css --style expanded",
+    "prefix": "postcss assets/css/style.css --use autoprefixer -d assets/css/prefixed/"
+  },
+  "author": "furawa",
+  "license": "ISC",
+  "browserslist": "last 2 versions",
+  "dependencies": {
+    "postcss": "^8.3.5"
+  }
+}
