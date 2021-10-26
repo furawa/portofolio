@@ -21,6 +21,8 @@ body {
 
 h1 {
     font-family: $font-family--logo;
+    font-weight: $font-weight--bold;
+    margin-left: em(10px);
     @include breakpoint(tablet) {
         font-size: em(18px);
     }

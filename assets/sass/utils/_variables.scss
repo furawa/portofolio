@@ -4,11 +4,11 @@
 
 // Font Stacks
 
-$font-url--google       : "https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600&family=Rubik&family=Shrikhand&display=swap";
+$font-url--google       : "https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600&family=Rubik&family=Cormorant+Garamond:ital,wght@1,300&display=swap";
 
 $font-family--primary   : "Roboto Mono", monospace, serif;
 $font-family--secondary : "Rubik", Arial, Sans-serif;
-$font-family--logo      : "Shrikhand", cursive, serif;
+$font-family--logo      : "Cormorant Garamond", cursive, serif;
 
 // Font Weigths
 
@@ -50,7 +50,7 @@ $palettes: (
 // Color Usage
 
 $color-primary      : $white;
-$color-secondary    : $black;
+$color-secondary    : yellow;
 $color-accent       : $grey;
 $color-shadow       : rgba($black, .3);
 

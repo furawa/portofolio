@@ -89,6 +89,7 @@
     }
 
     h2 {
+        margin-bottom: $margin-bottom-page;
         @include breakpoint(tablet) {
             grid-area: h2;
             justify-self: center;

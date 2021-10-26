@@ -1,213 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frank Pouassi</title>
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/prefixed/style.css">
-</head>
-<body>
-    <!--Header-->
-    <header id="home" class="header">
-        <div class="header__nav" role="navigation">
-            <h1  class="header__logo"><a href="#home">Frank Pouassi</a></h1>
-            <input type="checkbox" id="hamb_menu">
-            <label for="hamb_menu" class="menu">
-                <span class="menu__line"></span> <!--Necessary to use span instead of div to validate html-->
-                <span class="menu__line"></span> <!--Cannot use div inside label tag in this context-->
-                <span class="menu__line"></span>
-            </label>
-            <nav>
-                <ul>
-                    <li class="nav__link nav__link--active"><a href="index.html">Home</a></li>
-                    <li class="nav__link"><a href="#projects">Projects</a></li>
-                    <li class="nav__link"><a href="#about">About</a></li>
-                    <li class="nav__link"><a href="#contact">Contact</a></li>
-                </ul>   
-            </nav>
-        </div>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Frank Pouassi - Portfolio</title>
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/prefixed/style.css">
+    </head>
+    <body>
+        <!--Header-->
+        <header id="home" class="header">
+            <div class="header__nav" role="navigation">
+                <h1  class="header__logo"><a href="#home">Frank Pouassi</a></h1>
+                <input type="checkbox" id="hamb_menu">
+                <label for="hamb_menu" class="menu">
+                    <span class="menu__line"></span> <!--Necessary to use span instead of div to validate html-->
+                    <span class="menu__line"></span> <!--Cannot use div inside label tag in this context-->
+                    <span class="menu__line"></span>
+                </label>
+                <nav role="menu">
+                    <ul>
+                        <li class="nav__link nav__link--active"><a href="index.html">Home</a></li>
+                        <li class="nav__link"><a href="#projects">Projects</a></li>
+                        <li class="nav__link"><a href="#about">About</a></li>
+                        <li class="nav__link"><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    <!--Main presentation-->
-    <main class="main">
-        <p class="main__p">Hi, I'm <span>Steff</span>.<br>A FullStack developer &amp; Data Analyst</p>
-        <p class="main__p--sub">I can A/B test the webpages that I created first with a Mobile First approach and Accessibility.</p>
-        <button onclick="window.location.href='#about'" class="btn main__btn">Learn More</button>
-    </main>
-    
+        <!--Main presentation-->
+        <main class="main">
+            <p class="main__p">Hi, I'm <span>Steff</span><br>A Full-Stack developer &amp; Data Analyst</p>
+            <p class="main__p--sub">Responsivity, Accessibility, Precision, and Accuracy are my main focus</p>
+            <button onclick="window.location.href='#about'" class="btn main__btn">Learn More</button>
+        </main>
 
-    <!--Projects section-->
-    <section class="p" id="projects">
-        <h2>My Lastest Projects</h2>
-        <div class="p__container p__project1">
-            <div class="p__container--sub">
-                <p>Description project 1</p>
-                <button class="btn">More</button>
-            </div>
-        </div>
-        <div class="p__container p__project2">
-            <div class="p__container--sub">
-                <p>Description project 2</p>
-                <button class="btn">More</button>
-            </div>
-        </div>
-        <div class="p__container p__project3">
-            <div class="p__container--sub">
-                <p>Description project 3</p>
-                <button class="btn">More</button>
-            </div>
-        </div>
-        <div class="p__container p__project4" >
-            <div class="p__container--sub">
-                <p>Description project 4</p>
-                <button class="btn">More</button>
-            </div>
-        </div>
-        <div class="p__container p__project5">
-            <div class="p__container--sub">
-                <p>Description project 5</p>
-                <button class="btn">More</button>
-            </div>
-        </div>
-        <div class="p__container p__project6">
-            <div class="p__container--sub">
-                <p>Description project 6</p>
-                <button class="btn">More</button>
-            </div>
-        </div>
-    </section>
-
-    <!--About section-->
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="strengths">
-            <h3>Some of my Strengths</h3>
-            <figure class="strengths__fig1">
-                <figcaption><h4>I am a Learner</h4></figcaption>
-                <img src="assets/images/my_strenghts/learner.jpg" alt="Image representing the love to learn">  
-            </figure>
-            <p class="strengths__p1">onsectetur inventore repudiandae, doloribus molestiae eaque hic fuga odit maiores magnam ducimus earum fugiat iusto eligendi tenetur reiciendis nam laboriosam optio.</p>
-            <figure class="strengths__fig2">
-                <figcaption><h4>I am Curious</h4></figcaption>
-                <img class="strengths--right" src="assets/images/my_strenghts/input.jpg" alt="Image representing the curiosity">
-            </figure>
-            <p class="strengths--left strengths__p2">>onsectetur adipisicing elit. Neque incidunt mollitia error molestiae et, similique fuga! Repellendus tempora ipsum eligendi facere. Eaque facere ea delectus repellendus dolorum perferendis sed impedit!</p>
-            <figure class="strengths__fig3">
-                <figcaption><h4>I am a Problem solver</h4></figcaption>
-                <img src="assets/images/my_strenghts/restorative.jpg" alt="Image representing a puzzle">
-            </figure>
-            <p class = "strengths__p3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores iure molestias ipsa quisquam quia quam quos a voluptatem mollitia totam vero iste tenetur minus, magnam nostrum recusandae voluptatibus earum velit?</p>
-        </div>
-
-        <div class="experiences">
-            <h3>Experiences</h3>
-            <div class="experiences__wrapper">
-                <div class="experiences__detail">
-                    <details>
-                        <summary>Experience 1</summary>
-                        <p>Description 1</p>
-                    </details>
-                </div>
-                <div class="experiences__detail">
-                    <details>
-                        <summary>Experience 2</summary>
-                        <p>Description 2</p>
-                    </details>
-                </div>
-                <div class="experiences__detail">
-                    <details>
-                        <summary>Experience 3</summary>
-                        <p>Description 3</p>
-                    </details>
-                </div>
-                <div class="experiences__detail">
-                    <details>
-                        <summary>Experience 4</summary>
-                        <p>Description 4</p>
-                    </details>
-                </div>  
-                <div class="experiences__detail">
-                    <details>
-                        <summary>Experience 5</summary>
-                        <p>Description 5</p>
-                    </details>
-                </div>
-                <div class="experiences__detail">
-                    <details>
-                        <summary>Experience 6</summary>
-                        <p>Description 6</p>
-                    </details>
+        <!--Projects section-->
+        <section class="p" id="projects">
+            <h2>My Lastest Projects</h2>
+            <div role="img" aria-labelledby="desc-1" class= "p__container p__project1">
+                <div role="group" class="p__container--sub">
+                    <p id="desc-1">Description project 1</p>
+                    <button class="btn">More</button>
                 </div>
             </div>
-        </div>
+            <div role="img" aria-labelledby="desc-2" class="p__container p__project2">
+                <div role="group" class="p__container--sub">
+                    <p id="desc-2">Description project 2</p>
+                    <button class="btn">More</button>
+                </div>
+            </div>
+            <div role="img" aria-labelledby="desc-3" class="p__container p__project3">
+                <div role="group" class="p__container--sub">
+                    <p id="desc-3">Description project 3</p>
+                    <button class="btn">More</button>
+                </div>
+            </div>
+            <div role="img" aria-labelledby="desc-4" class="p__container p__project4" >
+                <div role="group" class="p__container--sub">
+                    <p id="desc-4">Description project 4</p>
+                    <button class="btn">More</button>
+                </div>
+            </div>
+            <div role="img" aria-labelledby="desc-5" class="p__container p__project5">
+                <div role="group" class="p__container--sub">
+                    <p id="desc-5">Description project 5</p>
+                    <button class="btn">More</button>
+                </div>
+            </div>
+            <div role="img" aria-labelledby="desc-6" class="p__container p__project6">
+                <div role="group" class="p__container--sub">
+                    <p id="desc-6">Description project 6</p>
+                    <button class="btn">More</button>
+                </div>
+            </div>
+        </section>
 
-        <div class="vision">
-            <h3>My Vision</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla natus cumque voluptate cupiditate ipsa excepturi, eveniet assumenda doloribus praesentium. Reiciendis itaque placeat accusamus dicta cum temporibus repellat dignissimos ratione veniam.</p>
-            <img src="assets/images/my_strenghts/uniqueness.jpg" alt="">
-        </div>
-    </section>
+        <!--About section-->
+        <section id="about">
+            <h2>About Me</h2>
+            <section  class="strengths">
+                <h3>Some of my Strengths</h3>
+                <figure class="strengths__fig1">
+                    <figcaption><h4>I am a Learner</h4></figcaption>
+                    <img src="assets/images/my_strenghts/learner.jpg" alt="Image representing the love to learn">  
+                </figure>
+                <p class="strengths__p1">onsectetur inventore repudiandae, doloribus molestiae eaque hic fuga odit maiores magnam ducimus earum fugiat iusto eligendi tenetur reiciendis nam laboriosam optio.</p>
+                <figure class="strengths__fig2">
+                    <figcaption><h4>I am Curious</h4></figcaption>
+                    <img class="strengths--right" src="assets/images/my_strenghts/input.jpg" alt="Image representing the curiosity">
+                </figure>
+                <p class="strengths--left strengths__p2">>onsectetur adipisicing elit. Neque incidunt mollitia error molestiae et, similique fuga! Repellendus tempora ipsum eligendi facere. Eaque facere ea delectus repellendus dolorum perferendis sed impedit!</p>
+                <figure class="strengths__fig3">
+                    <figcaption><h4>I am a Problem solver</h4></figcaption>
+                    <img src="assets/images/my_strenghts/restorative.jpg" alt="Image representing a puzzle">
+                </figure>
+                <p class = "strengths__p3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores iure molestias ipsa quisquam quia quam quos a voluptatem mollitia totam vero iste tenetur minus, magnam nostrum recusandae voluptatibus earum velit?</p>
+            </section>
 
-    <!--contact section-->
-    <section id="contact" class="contact">
-        <h2>Get In Touch</h2>
-        <form class="form" action="index.html" method="POST">
-            <label class="form__label" for="name">Name*</label>
-            <input class="form__input" type="text" id="name" name="user_name" placeholder="Marco Rossi" required>
+            <section class="experiences">
+                <h3>Experiences</h3>
+                <div role="group" class="experiences__wrapper">
+                    <div role="group" class="experiences__detail">
+                        <details>
+                            <summary>Experience 1</summary>
+                            <p>Description 1</p>
+                        </details>
+                    </div>
+                    <div role="group" class="experiences__detail">
+                        <details>
+                            <summary>Experience 2</summary>
+                            <p>Description 2</p>
+                        </details>
+                    </div>
+                    <div role="group" class="experiences__detail">
+                        <details>
+                            <summary>Experience 3</summary>
+                            <p>Description 3</p>
+                        </details>
+                    </div>
+                    <div role="group" class="experiences__detail">
+                        <details>
+                            <summary>Experience 4</summary>
+                            <p>Description 4</p>
+                        </details>
+                    </div>  
+                    <div role="group" class="experiences__detail">
+                        <details>
+                            <summary>Experience 5</summary>
+                            <p>Description 5</p>
+                        </details>
+                    </div>
+                    <div role="group" class="experiences__detail">
+                        <details>
+                            <summary>Experience 6</summary>
+                            <p>Description 6</p>
+                        </details>
+                    </div>
+                </div>
+            </section>
 
-            <label class="form__label" for="email">Email*</label>
-            <input class="form__input" type="email" id="email" name="user_email" placeholder="company@example.com" required>
+            <section class="vision">
+                <h3>My Vision</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla natus cumque voluptate cupiditate ipsa excepturi, eveniet assumenda doloribus praesentium. Reiciendis itaque placeat accusamus dicta cum temporibus repellat dignissimos ratione veniam.</p>
+                <img src="assets/images/my_strenghts/uniqueness.jpg" alt="">
+            </section>
+        </section>
 
-            <label class="form__label" for="phone">Phone</label>
-            <input class="form__input" type="tel" id="phone" pattern="[+]*[0-9]+" name="user_phone_number" placeholder="+12345643212">
-            <label class="form__lab" for="job_role">Job Role</label>
-            <select class="form__input" id="job_role" required autocomplete="off">
-                <option value="">--Please choose an option--</option>
-                <optgroup label="Web Development">
-                    <option value="frontend">Front-end Developer</option>
-                    <option value="backend">Back-end Developer</option>
-                    <option value="fullstack">FullStack Developer</option>
-                </optgroup>
-                <optgroup label="Data">
-                    <option value="Data Analysis">Data Analysis</option>
-                    <option value="Data Scientist">Data Scientist</option>
-                </optgroup>
-                <optgroup label="Other">
-                    <option value="freelance">Freelance</option>
-                    <option value="ninja">Ninja-Versatile</option>
-                </optgroup>
-            </select>
+        <!--contact section-->
+        <section id="contact" class="contact">
+            <h2>Get In Touch</h2>
+            <form class="form" action="index.html" method="POST">
+                <label class="form__label" for="name">Name*</label>
+                <input class="form__input" type="text" id="name" name="user_name" placeholder="Marco Rossi" required>
 
-            <label class="form__label" for="message">Message*</label>
-            <textarea class="form__input" id="message" name="user_message" placeholder="Your message here..." rows="6" required></textarea>
-            <button class="form__btn btn" type="submit">Send</button> <!--the reset type will clear the form-->
-        </form>
-        <div class="contact__address">
-            <img src="assets/images/icons/map.svg" alt="Address icon">
-            <h4>Address</h4>
-            <address>Via della liberazione 16<br>Fiorenzuola d'Arda<br>29017 PC, Italia</address>
-        </div>
-        <div class="contact__phone">
-            <img src="assets/images/icons/phone.svg" alt="Phone icon">
-            <h4>Phone Number</h4>
-            <p>39298293293</p>
-        </div>
-        <div class="contact__email">
-            <img src="assets/images/icons/mail.svg" alt="Mail icon">
-            <h4>Email Address</h4>
-            <p><a href="mailto:frankenprofessional@gmail.com">frankenprofessional@gmail.com</a></p>
-        </div>
-    </section>
+                <label class="form__label" for="email">Email*</label>
+                <input class="form__input" type="email" id="email" name="user_email" placeholder="company@example.com" required>
 
-    <!--footer section-->
-    <footer class="footer">
-        <p>&copy;2021, all rights reserved</p>
-        <div>
-            <a class="footer__lin" href=""><img src="assets/images/icons/linkedin.svg" alt="Linkedin logo linked to my linkedin account"></a>
-            <a class="footer__git" href="https://github.com/furawa/Data_Analyst_Udacity_Projects"><img src="assets/images/icons/github.svg" alt="Github logo linked to my github account"></a>  
-        </div>
-    </footer>
-</body>
+                <label class="form__label" for="phone">Phone</label>
+                <input class="form__input" type="tel" id="phone" pattern="[+]*[0-9]+" name="user_phone_number" placeholder="+12345643212">
+
+                <label class="form__lab" for="job_role">Job Role</label>
+                <select class="form__input" id="job_role" name="job_role" required autocomplete="off">
+                    <option value="">--Please choose an option--</option>
+                    <optgroup label="Web Development">
+                        <option value="frontend">Front-end Developer</option>
+                        <option value="backend">Back-end Developer</option>
+                        <option value="fullstack">FullStack Developer</option>
+                    </optgroup>
+                    <optgroup label="Data">
+                        <option value="Data Analysis">Data Analysis</option>
+                        <option value="Data Scientist">Data Scientist</option>
+                    </optgroup>
+                    <optgroup label="Other">
+                        <option value="freelance">Freelance</option>
+                        <option value="ninja">Ninja-Versatile</option>
+                    </optgroup>
+                </select>
+
+                <label class="form__label" for="message">Message*</label>
+                <textarea class="form__input" id="message" name="user_message" placeholder="Your message here..." rows="6" required></textarea>
+
+                <button class="form__btn btn" type="reset">Send</button> <!--the reset type will clear the form-->
+            </form>
+
+            <aside class="contact__address">
+                <img src="assets/images/icons/map.svg" alt="Address icon">
+                <h4>Address</h4>
+                <address>Via della liberazione 16<br>Fiorenzuola d'Arda<br>29017 PC, Italia</address>
+            </aside>
+            <aside class="contact__phone">
+                <img src="assets/images/icons/phone.svg" alt="Phone icon">
+                <h4>Phone Number</h4>
+                <p>39298293293</p>
+            </aside>
+            <aside class="contact__email">
+                <img src="assets/images/icons/mail.svg" alt="Mail icon">
+                <h4>Email Address</h4>
+                <p><a href="mailto:frankenprofessional@gmail.com">frankenprofessional@gmail.com</a></p>
+            </aside>
+        </section>
+
+        <!--footer section-->
+        <footer class="footer">
+            <p>&copy;2021, all rights reserved</p>
+            <div role="group">
+                <a class="footer__lin" href=""><img src="assets/images/icons/linkedin.svg" alt="Linkedin logo linked to my linkedin account"></a>
+                <a class="footer__git" href="https://github.com/furawa/Data_Analyst_Udacity_Projects"><img src="assets/images/icons/github.svg" alt="Github logo linked to my github account"></a>  
+            </div>
+        </footer>
+    </body>
 </html>

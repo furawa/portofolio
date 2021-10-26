@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600&family=Rubik&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600&family=Rubik&family=Cormorant+Garamond:ital,wght@1,300&display=swap");
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -64,7 +64,9 @@ body {
 }
 
 h1 {
-  font-family: "Shrikhand", cursive, serif;
+  font-family: "Cormorant Garamond", cursive, serif;
+  font-weight: 600;
+  margin-left: 0.625em;
 }
 @media screen and (min-width: 768px) {
   h1 {
@@ -182,8 +184,8 @@ img {
 }
 
 .btn:hover {
-  background: #93989c;
-  color: #fff;
+  background: #d9d9d9;
+  color: #0b0b0b;
 }
 
 /*================================
@@ -426,6 +428,7 @@ nav a:hover {
   grid-row: 1/span 1;
   font-size: 1.5em;
   align-self: end;
+  font-weight: 400;
 }
 @media screen and (min-width: 1024px) {
   .main__p {
@@ -438,7 +441,8 @@ nav a:hover {
   }
 }
 .main__p span {
-  font-family: "Shrikhand", cursive, serif;
+  font-family: "Cormorant Garamond", cursive, serif;
+  font-weight: 600;
 }
 .main__p--sub {
   grid-row: 2/span 1;
@@ -477,7 +481,7 @@ nav a:hover {
   display: flex;
   height: 4.375em;
   background: #797e83;
-  color: #fff;
+  color: #0b0b0b;
   font-size: 0.75em;
   justify-content: space-between;
   align-items: center;
@@ -613,6 +617,9 @@ nav a:hover {
   .p__project6 {
     grid-area: p6;
   }
+}
+.p h2 {
+  margin-bottom: 50px;
 }
 @media screen and (min-width: 768px) {
   .p h2 {
