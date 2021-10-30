@@ -27,7 +27,7 @@
 // Mixin to add a breakpoint
 
 @mixin breakpoint($device) {
-    @media screen and (min-width: map-get($breakpoins, $device)) {
+    @media screen and (min-width: map-get($breakpoints, $device)) {
         @content;
     }
 }

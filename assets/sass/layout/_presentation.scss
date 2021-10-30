@@ -51,6 +51,7 @@
             @media (prefers-reduced-motion : no-preference) {
                 animation: pulse-button 1s infinite;
                 &:hover {
+                    border: 1px solid black;
                     animation-play-state: paused;
                 }
             }

@@ -64,7 +64,7 @@
         }
     }
     @include e(project4) {
-        background-image: url("../../images/projects/weratedogs_project.jpg");
+        background-image: url("../../images/projects/interest_calculator.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         @include breakpoint(laptop) {

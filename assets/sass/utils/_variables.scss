@@ -50,7 +50,7 @@ $palettes: (
 // Color Usage
 
 $color-primary      : $white;
-$color-secondary    : yellow;
+$color-secondary    : $black;
 $color-accent       : $grey;
 $color-shadow       : rgba($black, .3);
 
@@ -69,11 +69,11 @@ $margin-bottom-page  : 50px;
 
 // Breakpoints for responsive design
 
-$breakpoins: (
-    mobile: 480px,
+$breakpoints: (
+    mobile: 576px,
     tablet: 768px,
-    laptop: 1024px,
-    desktop: 1600px
+    laptop: 992px,
+    desktop: 1200px
 );
 
 // Borders 

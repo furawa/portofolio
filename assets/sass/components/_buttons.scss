@@ -3,8 +3,13 @@
  ================================ */
 
 .btn {
+    display: flex;
+    text-decoration: none;
     width: em(100px);
     height: em(50px);
+    margin: auto;
+    align-items: center;
+    justify-content: center;
     border-radius: em(10px);
     background: palette(black, dark);
     color: palette(white);

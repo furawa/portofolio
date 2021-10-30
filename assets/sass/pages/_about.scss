@@ -8,6 +8,7 @@
 #about h2 {
     margin-bottom: em(20px);
 }
+
 .strengths {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -122,40 +123,62 @@
     }
     @include e(wrapper) {
         position: relative;
+        &::before {     /* Create the line in the middle */
+            content:"";
+            width: 2px;
+            background-color: rgba($grey, 0.2);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right:50%;
+        }
     }
     @include e(detail) {
         // width: 100%;
         margin-bottom: em(100px);
         display: flex;
-        // &::after {
-        //     content:"\2299";
-        //     position: absolute;
-        //     right: 25%;
-        //     font-size: em(24px);
+        // &::before {
+        //     @include breakpoint(laptop) {
+        //         content:"\2299";
+        //         position: absolute;
+        //         font-size: em(24px);
+        //         left:49%;
+        //     }
         // }
-        &::before {
-            content:"";
-            width: em(2px);
-            background-color: rgba($grey, 0.1);
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 50%;
-        }
-        
     }
     details {
         width: 45%;
+        ul {
+            margin-left: 10%;
+        }
+        li {
+            list-style-type:disc;
+        }
     }
 }
 
 .experiences__detail:nth-child(even) {
     justify-content: flex-end;
-    
+    // &::after {
+    //     @include breakpoint(laptop) {
+    //         content:"<";
+    //         position: relative;
+    //         font-size: em(24px);
+    //         right: 47%;
+    //     }
+    // }
 }
 
 .experiences__detail:not(:nth-child(even)) {
     justify-content: flex-start;
+    // &::before {
+    //     @include breakpoint(laptop) {
+    //         content:">";
+    //         position: relative;
+    //         font-size: em(24px);
+    //         left: 47%;
+    //     }
+    // } 
 }
 
 /* My Vision rules */
@@ -196,5 +219,7 @@
             }
         }
     }
-    
+    b, i{
+       font-weight: bolder;
+    }
 }
