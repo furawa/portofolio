@@ -112,10 +112,15 @@
         border-radius: em(4px);
         cursor: pointer;
         text-align: left;
+        font-weight: bolder;
         border: 1px solid $black;
         margin-bottom: em(10px);
         padding: em(10px);
         transition: all 0.5s ease-in-out;
+        span {
+            font-weight: normal;
+            font-style: italic;
+        }
     }
    
     details[open] summary {
