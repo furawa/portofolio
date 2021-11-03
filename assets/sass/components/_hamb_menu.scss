@@ -2,68 +2,67 @@
  Menu hamburger rules
 ================================ */
 
-#hamb_menu{
-    display: none; /* Hide the checkbox */
+#hamb_menu {
+  display: none; /* Hide the checkbox */
 }
 
 .menu span {
-    display: block;
+  display: block;
 }
 
 .menu {
-    width: em(40px);
-    height: em(40px);
-    margin-right: em(5px);
+  width: em(40px);
+  height: em(40px);
+  margin-right: em(5px);
 
-    @include e(line) {
-        position: relative;
+  @include e(line) {
+    position: relative;
+    width: em(40px);
+    height: em(5px);
+    background: $black;
+    box-shadow: em(1px) em(1px) em(3px) rgba(0, 0, 0, 0.4);
+    border-radius: em(5px);
+    transition: 0.4s ease;
+    margin-bottom: em(5px);
+
+    &:first-child {
+      margin-top: em(7px);
+    }
+
+    &:nth-child(2) {
+      &::after {
+        content: "";
+        position: absolute;
         width: em(40px);
         height: em(5px);
         background: $black;
-        box-shadow: em(1px) em(1px) em(3px) rgba(0, 0, 0, 0.4);
         border-radius: em(5px);
         transition: 0.4s ease;
-        margin-bottom: em(5px);
-
-        &:first-child {
-            margin-top: em(7px);
-        }
-
-        &:nth-child(2) {
-        
-            &::after {
-                content: "";
-                position: absolute;
-                width: em(40px);
-                height: em(5px);
-                background: $black;
-                border-radius: em(5px);
-                transition: 0.4s ease;
-                opacity: 0;
-            }
-        }
+        opacity: 0;
+      }
     }
-    /* From the laptop width we don't see the hamburger menu anymore */
-    @include breakpoint(laptop) {
-        display: none;
-    }
+  }
+  /* From the laptop width we don't see the hamburger menu anymore */
+  @include breakpoint(laptop) {
+    display: none;
+  }
 }
 #hamb_menu:checked + .menu {
-    .menu__line {
-        &:first-child,
-        &:nth-child(3) {
-            width: 0;
-        }
-        &:nth-child(2) {
-            transform: rotate(-45deg);
-        }
-        &:after {
-            opacity: 1;
-            transform: rotate(90deg);
-        }
+  .menu__line {
+    &:first-child,
+    &:nth-child(3) {
+      width: 0;
     }
+    &:nth-child(2) {
+      transform: rotate(-45deg);
+    }
+    &:after {
+      opacity: 1;
+      transform: rotate(90deg);
+    }
+  }
 }
 
 #hamb_menu:checked ~ nav {
-    transform: scale(1,1);
+  transform: scale(1, 1);
 }

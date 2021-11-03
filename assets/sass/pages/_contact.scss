@@ -3,107 +3,108 @@
   =================================*/
 
 .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: $margin-bottom-page;
+  @include breakpoint(laptop) {
+    display: grid;
+    width: 80%;
+    margin: auto;
     margin-bottom: $margin-bottom-page;
+    grid-template: 0.25fr repeat(3, 1fr) / repeat(2, 1fr);
+    grid-template-areas:
+      "h2 h2"
+      "form address"
+      "form phone"
+      "form email";
+    column-gap: em(50px);
+    row-gap: em(30px);
+    align-items: stretch;
+  }
+  .form {
     @include breakpoint(laptop) {
-        display: grid;
-        width: 80%;
-        margin: auto;
-        margin-bottom: $margin-bottom-page;
-        grid-template: 0.25fr repeat(3, 1fr) / repeat(2, 1fr);
-        grid-template-areas: "h2 h2"
-                             "form address"
-                             "form phone"
-                             "form email";
-        column-gap: em(50px);
-        row-gap: em(30px);
-        align-items: stretch;
+      grid-area: form;
     }
-    .form {
-        @include breakpoint(laptop) {
-            grid-area: form;
+  }
+  img {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    width: 50%;
+    height: 50%;
+    align-self: center;
+    justify-self: flex-start;
+    transition: 0.75s;
+    @include breakpoint(laptop) {
+      &:hover {
+        // transform: rotateY(360deg);
+        filter: invert(43%) sepia(57%) saturate(6312%) hue-rotate(346deg)
+          brightness(96%) contrast(79%);
+      }
+    }
+  }
+  h4 {
+    justify-self: flex-start;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    white-space: nowrap;
+  }
+  h2 {
+    margin-bottom: em(30px);
+    @include breakpoint(laptop) {
+      grid-area: h2;
+    }
+  }
+  address {
+    align-self: center;
+    justify-self: center;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+  }
+  p {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+    align-self: center;
+    justify-self: center;
+    word-wrap: break-word;
+  }
+  @include e(address) {
+    display: none;
+    @include breakpoint(laptop) {
+      display: grid;
+      grid-area: address;
+      grid-template: 0.25fr 0.25fr / repeat(2, 1fr);
+      gap: em(10px);
+      border: $container-border;
+      border-radius: $container-border-radius;
+    }
+  }
+  @include e(phone) {
+    display: none;
+    @include breakpoint(laptop) {
+      display: grid;
+      grid-area: phone;
+      grid-template: 0.25fr 0.25fr / repeat(2, 1fr);
+      gap: em(10px);
+      border: $container-border;
+      border-radius: $container-border-radius;
+    }
+  }
+  @include e(email) {
+    display: none;
+    @include breakpoint(laptop) {
+      display: grid;
+      grid-area: email;
+      grid-template: 0.25fr 0.25fr / repeat(2, 1fr);
+      gap: em(10px);
+      border: $container-border;
+      border-radius: $container-border-radius;
+      img {
+        &:hover {
+          filter: invert(43%) sepia(57%) saturate(6312%) hue-rotate(346deg)
+            brightness(96%) contrast(79%);
         }
+      }
     }
-    img {
-        grid-column: 1 / span 1;
-        grid-row: 1 / span 1;
-        width: 50%;
-        height: 50%;
-        align-self: center;
-        justify-self: flex-start;
-        transition: .75s;
-        @include breakpoint(laptop) {
-            &:hover {
-                // transform: rotateY(360deg);
-                filter: invert(43%) sepia(57%) saturate(6312%) hue-rotate(346deg) brightness(96%) contrast(79%);
-            }
-        }
-    }
-    h4 {
-        justify-self: flex-start;
-        grid-column: 1 / span 1;
-        grid-row: 2 / span 1;
-        white-space: nowrap;
-    }
-    h2 {
-        margin-bottom: em(30px);
-        @include breakpoint(laptop) {
-            grid-area: h2;
-        }
-    }
-    address {
-        align-self: center;
-        justify-self: center;
-        grid-column: 2 / span 1;
-        grid-row: 1 / span 2;
-    }
-    p {
-        grid-column: 2 / span 1;
-        grid-row: 1 / span 2;
-        align-self: center;
-        justify-self: center;
-        word-wrap: break-word;
-        
-    }
-    @include e(address) {
-        display: none;
-        @include breakpoint(laptop) {
-            display: grid;
-            grid-area: address;
-            grid-template: 0.25fr 0.25fr/ repeat(2, 1fr);
-            gap: em(10px);
-            border: $container-border;
-            border-radius: $container-border-radius;
-        }
-    }
-    @include e(phone) {
-        display: none;
-        @include breakpoint(laptop) {
-            display: grid;
-            grid-area: phone;
-            grid-template: 0.25fr 0.25fr/ repeat(2, 1fr);
-            gap: em(10px);
-            border: $container-border;
-            border-radius: $container-border-radius;
-        }
-    }
-    @include e(email) {
-        display: none;
-        @include breakpoint(laptop) {
-            display: grid;
-            grid-area: email;
-            grid-template: 0.25fr 0.25fr/ repeat(2, 1fr);
-            gap: em(10px);
-            border: $container-border;
-            border-radius: $container-border-radius;
-            img {
-                &:hover {
-                    filter: invert(43%) sepia(57%) saturate(6312%) hue-rotate(346deg) brightness(96%) contrast(79%);
-                }
-                
-            }
-        }
-    }
+  }
 }

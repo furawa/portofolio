@@ -3,98 +3,99 @@
  ============================= */
 
 .p {
-    display: grid;
-    width: 100%;
-    min-height: 100vh;
-    grid-template: .25fr repeat(6, 1fr) / 1fr;
-    text-align: center;
-    margin-bottom: em(50px);
+  display: grid;
+  width: 100%;
+  min-height: 100vh;
+  grid-template: 0.25fr repeat(6, 1fr) / 1fr;
+  text-align: center;
+  margin-bottom: em(50px);
 
-    @include breakpoint(tablet) {
-        grid-template: .25fr repeat(3, 1fr) / repeat(2, 1fr);
-        grid-template-areas: "h2 h2";
-                            //  "p1 p2"
-                            //  "p3 p4"
-                            //  "p5 p6";
-        
-    }
+  @include breakpoint(tablet) {
+    grid-template: 0.25fr repeat(3, 1fr) / repeat(2, 1fr);
+    grid-template-areas: "h2 h2";
+    //  "p1 p2"
+    //  "p3 p4"
+    //  "p5 p6";
+  }
+  @include breakpoint(laptop) {
+    grid-template: 0.25fr repeat(3, 1fr) / repeat(3, 1fr);
+    justify-content: center;
+    align-content: center;
+    gap: em(20px);
+    grid-template-areas:
+      "h2 h2 h2"
+      "p1 p4 p3"
+      "p2 p4 p3"
+      "p6 p5 p3";
+  }
+  @include breakpoint(desktop) {
+    grid-template: 0.25fr repeat(3, minmax(300px, 400px)) / repeat(
+        3,
+        minmax(300px, 400px)
+      );
+    justify-content: center;
+    align-content: center;
+    grid-template-areas:
+      "h2 h2 h2"
+      "p1 p4 p3"
+      "p2 p4 p3"
+      "p6 p5 p3";
+  }
+  @include e(project1) {
+    background-image: url("../../images/projects/bike_project.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     @include breakpoint(laptop) {
-        grid-template: .25fr repeat(3, 1fr) / repeat(3, 1fr);
-        justify-content: center;
-        align-content: center;
-        gap: em(20px);
-        grid-template-areas: "h2 h2 h2"
-                             "p1 p4 p3"
-                             "p2 p4 p3"
-                             "p6 p5 p3";
+      grid-area: p1;
+    }
+  }
+  @include e(project2) {
+    background-image: url("../../images/projects/ecommerce_project.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include breakpoint(laptop) {
+      grid-area: p2;
+    }
+  }
+  @include e(project3) {
+    background-image: url("../../images/projects/undernutrition_project.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include breakpoint(laptop) {
+      grid-area: p3;
+    }
+  }
+  @include e(project4) {
+    background-image: url("../../images/projects/interest_calculator.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include breakpoint(laptop) {
+      grid-area: p4;
+    }
+  }
+  @include e(project5) {
+    background-image: url("../../images/projects/co2_emission_project.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include breakpoint(laptop) {
+      grid-area: p5;
+    }
+  }
+  @include e(project6) {
+    background-image: url("../../images/projects/app_project.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include breakpoint(laptop) {
+      grid-area: p6;
+    }
+  }
 
+  h2 {
+    margin-bottom: $margin-bottom-page;
+    @include breakpoint(tablet) {
+      grid-area: h2;
+      justify-self: center;
+      align-self: start;
     }
-    @include breakpoint(desktop) {
-        grid-template: .25fr repeat(3, minmax(300px, 400px)) / repeat(3, minmax(300px, 400px));
-        justify-content: center;
-        align-content: center;
-        grid-template-areas: "h2 h2 h2"
-                             "p1 p4 p3"
-                             "p2 p4 p3"
-                             "p6 p5 p3";
-
-    }
-    @include e(project1) {
-        background-image: url("../../images/projects/bike_project.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        @include breakpoint(laptop) {
-            grid-area: p1;
-        }
-    }
-    @include e(project2) {
-        background-image: url("../../images/projects/ecommerce_project.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        @include breakpoint(laptop) {
-            grid-area: p2;
-        }
-    }
-    @include e(project3) {
-        background-image: url("../../images/projects/undernutrition_project.jpeg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        @include breakpoint(laptop) {
-            grid-area: p3;
-        }
-    }
-    @include e(project4) {
-        background-image: url("../../images/projects/interest_calculator.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        @include breakpoint(laptop) {
-            grid-area: p4;
-        }
-    }
-    @include e(project5) {
-        background-image: url("../../images/projects/co2_emission_project.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        @include breakpoint(laptop) {
-            grid-area: p5;
-        }
-    }
-    @include e(project6) {
-        background-image: url("../../images/projects/app_project.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        @include breakpoint(laptop) {
-            grid-area: p6;
-        }
-    }
-
-    h2 {
-        margin-bottom: $margin-bottom-page;
-        @include breakpoint(tablet) {
-            grid-area: h2;
-            justify-self: center;
-            align-self: start;
-        }
-    }
-    
+  }
 }

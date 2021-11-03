@@ -5,86 +5,87 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-size: $base__font-size;
-    // line-height: math.div($base__line, $base__font-size); /*Already exists in reset */
-    font-family: $font-family--primary;
-    background-color: palette(grey, xx-light);
-    color: palette(black, dark);
-    @include breakpoint(laptop) {
-        font-size: em(18px);
-    }
+  font-size: $base__font-size;
+  // line-height: math.div($base__line, $base__font-size); /*Already exists in reset */
+  font-family: $font-family--primary;
+  background-color: palette(grey, xx-light);
+  color: palette(black, dark);
+  @include breakpoint(laptop) {
+    font-size: em(18px);
+  }
 }
 
 h1 {
-    font-family: $font-family--logo;
-    font-weight: $font-weight--bold;
-    margin-left: em(10px);
-    @include breakpoint(tablet) {
-        font-size: em(18px);
+  font-family: $font-family--logo;
+  font-weight: $font-weight--bold;
+  margin-left: em(10px);
+  @include breakpoint(tablet) {
+    font-size: em(18px);
+  }
+  @include breakpoint(laptop) {
+    font-size: em(20px);
+  }
+  @include breakpoint(desktop) {
+    font-size: em(24px);
+  }
+  a {
+    text-decoration: none;
+    color: $black;
+    background-color: $grey;
+    &:hover {
+      background-color: $grey;
     }
-    @include breakpoint(laptop) {
-        font-size: em(20px);
-    }
-    @include breakpoint(desktop) {
-        font-size: em(24px);
-    }
-    a {
-        text-decoration: none;
-        color: $black;
-        background-color:$grey;
-        &:hover {
-            background-color: $grey;
-        }
-    }
+  }
 }
 
-h2, h3, h4{
-    text-align: center;
-    font-family: $font-family--secondary;
+h2,
+h3,
+h4 {
+  text-align: center;
+  font-family: $font-family--secondary;
 }
 h2 {
-    font-size: em(24px);
-    @include breakpoint(tablet) {
-        font-size: em(26px);
-    }
-    @include breakpoint(laptop) {
-        font-size: em(28px);
-    }
-    @include breakpoint(desktop) {
-        font-size: em(32px);
-    }
+  font-size: em(24px);
+  @include breakpoint(tablet) {
+    font-size: em(26px);
+  }
+  @include breakpoint(laptop) {
+    font-size: em(28px);
+  }
+  @include breakpoint(desktop) {
+    font-size: em(32px);
+  }
 }
 
 h3 {
-    font-size: em(20px);
-    @include breakpoint(tablet) {
-        font-size: em(22px);
-    }
-    @include breakpoint(laptop) {
-        font-size: em(24px);
-    }
-    @include breakpoint(desktop) {
-        font-size: em(28px);
-    }
+  font-size: em(20px);
+  @include breakpoint(tablet) {
+    font-size: em(22px);
+  }
+  @include breakpoint(laptop) {
+    font-size: em(24px);
+  }
+  @include breakpoint(desktop) {
+    font-size: em(28px);
+  }
 }
 
 h4 {
-    font-size: em(18px);
-    @include breakpoint(tablet) {
-        font-size: em(20px);
-    }
-    @include breakpoint(laptop) {
-        font-size: em(22px);
-    }
-    @include breakpoint(desktop) {
-        font-size: em(26px);
-    }
+  font-size: em(18px);
+  @include breakpoint(tablet) {
+    font-size: em(20px);
+  }
+  @include breakpoint(laptop) {
+    font-size: em(22px);
+  }
+  @include breakpoint(desktop) {
+    font-size: em(26px);
+  }
 }
 img {
-    width: 100%;
+  width: 100%;
 }
-

@@ -3,7 +3,7 @@
 //======================================
 
 // Import the new math.div function for divisions
-@use "sass:math"; 
+@use "sass:math";
 
 // 1-Import utils partials
 @import "./utils/variables";
@@ -11,7 +11,7 @@
 @import "./utils/mixins";
 
 // 2- Import Vendor sheets
-    // Nothing for the moment here...
+// Nothing for the moment here...
 
 // 3- Import Base partials
 @import "./base/base";
@@ -34,4 +34,4 @@
 @import "./pages/contact";
 
 // 7- Import Themes partials
-    // Nothing for the moment here
+// Nothing for the moment here

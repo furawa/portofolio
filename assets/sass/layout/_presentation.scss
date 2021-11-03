@@ -3,59 +3,58 @@
   ==========================================*/
 
 .main {
-    display: grid;
-    width: 80%;
-    height: 60vh;
-    grid-template-rows: 1fr 1fr 1fr;
-    position: absolute;
-    top: 30%;
-    left: 10%;
-    @include breakpoint(tablet) {
-        width: 60%;
-        left: 20%;
-    }
+  display: grid;
+  width: 80%;
+  height: 60vh;
+  grid-template-rows: 1fr 1fr 1fr;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  @include breakpoint(tablet) {
+    width: 60%;
+    left: 20%;
+  }
 
-    @include e(p) {
-        grid-row: 1 / span 1;
-        font-size: em(24px);
-        align-self: end;
-        font-weight: $font-weight--medium;
-        @include breakpoint(laptop) {
-            font-size: em(40px);
-        }
-        @include breakpoint(desktop) {
-            font-size: em(50px);
-        }
-        span {
-            font-family: $font-family--logo;
-            font-weight: $font-weight--bold;
-        }
-        @include m(sub) {
-            grid-row: 2 / span 1;
-            @include breakpoint(laptop) {
-                font-size: em(26px);
-                font-style: italic;
-            }
+  @include e(p) {
+    grid-row: 1 / span 1;
+    font-size: em(24px);
+    align-self: end;
+    font-weight: $font-weight--medium;
+    @include breakpoint(laptop) {
+      font-size: em(40px);
+    }
+    @include breakpoint(desktop) {
+      font-size: em(50px);
+    }
+    span {
+      font-family: $font-family--logo;
+      font-weight: $font-weight--bold;
+    }
+    @include m(sub) {
+      grid-row: 2 / span 1;
+      @include breakpoint(laptop) {
+        font-size: em(26px);
+        font-style: italic;
+      }
 
-            @include breakpoint(desktop) {
-                font-size: em(32px);
-                font-style: italic;
-            }
-        }
+      @include breakpoint(desktop) {
+        font-size: em(32px);
+        font-style: italic;
+      }
     }
-    @include e(btn) {
-        grid-row: 3 / span 1;
-        justify-self: center;
-        align-self: center;
-        @include breakpoint(laptop) {
-            @media (prefers-reduced-motion : no-preference) {
-                animation: pulse-button 1s infinite;
-                &:hover {
-                    border: 1px solid black;
-                    animation-play-state: paused;
-                }
-            }
-            
+  }
+  @include e(btn) {
+    grid-row: 3 / span 1;
+    justify-self: center;
+    align-self: center;
+    @include breakpoint(laptop) {
+      @media (prefers-reduced-motion: no-preference) {
+        animation: pulse-button 1s infinite;
+        &:hover {
+          border: 1px solid black;
+          animation-play-state: paused;
         }
+      }
     }
+  }
 }

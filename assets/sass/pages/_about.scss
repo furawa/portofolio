@@ -2,229 +2,225 @@
  About me page rules
  =====================================*/
 
-
-/* My strengths rules */ 
+/* My strengths rules */
 
 #about h2 {
-    margin-bottom: em(20px);
+  margin-bottom: em(20px);
 }
 
 .strengths {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(min-content, max-content);
-    gap: em(10px) em(20px);
-    margin-bottom: $margin-bottom-page;
-    @include breakpoint(laptop) {
-        width: 80%;
-        margin: auto;
-        grid-template: .25fr repeat(2, 1fr) / repeat(3, 1fr);
-        gap: em(15px) em(30px);
-        
-        @include e(fig1) {
-            grid-column: 1 / span 1;
-        }
-        @include e(p1) {
-            grid-column : 1 / span 1;
-            grid-row : 3 / span 1;
-        }
-        @include e(fig2) {
-            grid-column: 2 / span 1;
-        }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(min-content, max-content);
+  gap: em(10px) em(20px);
+  margin-bottom: $margin-bottom-page;
+  @include breakpoint(laptop) {
+    width: 80%;
+    margin: auto;
+    grid-template: 0.25fr repeat(2, 1fr) / repeat(3, 1fr);
+    gap: em(15px) em(30px);
 
-        @include e(fig3) {
-            grid-column: 3 / span 1;
-        }
-        @include e(p3) {
-            grid-column: 3 / span 1;
-            grid-row: 3 / span 1; 
-        }
-    }
-    @include breakpoint(desktop) {
-        width: 70%;
-        margin: auto;
-    }
-    h3 {
-        grid-column: 1 / span 2;
-        margin-bottom: $margin-bottom-page;
-        @include breakpoint(laptop) {
-            grid-column: 1 / span 3;
-        }
-    }
-    img {
-        display: block;
-        @include breakpoint(laptop) {
-            height: 300px;
-        }
-        @include breakpoint(desktop) {
-            height: 500px;
-        }
+    @include e(fig1) {
+      grid-column: 1 / span 1;
     }
     @include e(p1) {
-        width: fit-content;
-        height: fit-content;
-        // @include breakpoint(laptop) {
-        //     animation: appear-left $anim-duration ease-in-out;
-        // }
-        // Animation needs Js to be more effective so that it plays after scrolling
+      grid-column: 1 / span 1;
+      grid-row: 3 / span 1;
     }
-    @include m(right) {
-        float: right;
-        grid-column: 2 / span 1;
-        grid-row: 3 / span 1;
-        
+    @include e(fig2) {
+      grid-column: 2 / span 1;
     }
-    @include m(left) {
-        grid-column: 1 / span 1;
-        grid-row: 3 /span 1;
-        @include breakpoint(laptop) {
-            grid-column: 2 / span 1;
-            grid-row: 3 / span 1;
-            // animation: appear-bottom $anim-duration ease-in-out;
-        // Animation needs Js to be more effective so that it plays after scrolling
 
-        }
+    @include e(fig3) {
+      grid-column: 3 / span 1;
     }
     @include e(p3) {
-        @include breakpoint(laptop) {
-            // animation: appear-right $anim-duration ease-in-out;
-        // Animation needs Js to be more effective so that it plays after scrolling
-
-        }
+      grid-column: 3 / span 1;
+      grid-row: 3 / span 1;
     }
-    figcaption {
-        text-align: center;
+  }
+  @include breakpoint(desktop) {
+    width: 70%;
+    margin: auto;
+  }
+  h3 {
+    grid-column: 1 / span 2;
+    margin-bottom: $margin-bottom-page;
+    @include breakpoint(laptop) {
+      grid-column: 1 / span 3;
     }
+  }
+  img {
+    display: block;
+    @include breakpoint(laptop) {
+      height: 300px;
+    }
+    @include breakpoint(desktop) {
+      height: 500px;
+    }
+  }
+  @include e(p1) {
+    width: fit-content;
+    height: fit-content;
+    // @include breakpoint(laptop) {
+    //     animation: appear-left $anim-duration ease-in-out;
+    // }
+    // Animation needs Js to be more effective so that it plays after scrolling
+  }
+  @include m(right) {
+    float: right;
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+  }
+  @include m(left) {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    @include breakpoint(laptop) {
+      grid-column: 2 / span 1;
+      grid-row: 3 / span 1;
+      // animation: appear-bottom $anim-duration ease-in-out;
+      // Animation needs Js to be more effective so that it plays after scrolling
+    }
+  }
+  @include e(p3) {
+    @include breakpoint(laptop) {
+      // animation: appear-right $anim-duration ease-in-out;
+      // Animation needs Js to be more effective so that it plays after scrolling
+    }
+  }
+  figcaption {
+    text-align: center;
+  }
 }
-
 
 /* My experiences rules */
 
 .experiences {
-    @include breakpoint(laptop) {
-        width: 70%;
-        margin: auto;
+  @include breakpoint(laptop) {
+    width: 70%;
+    margin: auto;
+  }
+  h3 {
+    margin-bottom: em($margin-bottom-page);
+  }
+  summary {
+    border-radius: em(4px);
+    cursor: pointer;
+    text-align: left;
+    font-weight: bolder;
+    border: 1px solid $black;
+    margin-bottom: em(10px);
+    padding: em(10px);
+    transition: all 0.5s ease-in-out;
+    span {
+      font-weight: normal;
+      font-style: italic;
     }
-    h3 {
-        margin-bottom: em($margin-bottom-page);
+  }
+
+  details[open] summary {
+    margin-bottom: em(35px);
+  }
+  @include e(wrapper) {
+    position: relative;
+    &::before {
+      /* Create the line in the middle */
+      content: "";
+      width: 2px;
+      background-color: rgba($grey, 0.2);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 50%;
     }
-    summary {
-        border-radius: em(4px);
-        cursor: pointer;
-        text-align: left;
-        font-weight: bolder;
-        border: 1px solid $black;
-        margin-bottom: em(10px);
-        padding: em(10px);
-        transition: all 0.5s ease-in-out;
-        span {
-            font-weight: normal;
-            font-style: italic;
-        }
+  }
+  @include e(detail) {
+    // width: 100%;
+    margin-bottom: em(100px);
+    display: flex;
+    // &::before {
+    //     @include breakpoint(laptop) {
+    //         content:"\2299";
+    //         position: absolute;
+    //         font-size: em(24px);
+    //         left:49%;
+    //     }
+    // }
+  }
+  details {
+    width: 45%;
+    ul {
+      margin-left: 10%;
     }
-   
-    details[open] summary {
-        margin-bottom: em(35px);
+    li {
+      list-style-type: disc;
     }
-    @include e(wrapper) {
-        position: relative;
-        &::before {     /* Create the line in the middle */
-            content:"";
-            width: 2px;
-            background-color: rgba($grey, 0.2);
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            right:50%;
-        }
-    }
-    @include e(detail) {
-        // width: 100%;
-        margin-bottom: em(100px);
-        display: flex;
-        // &::before {
-        //     @include breakpoint(laptop) {
-        //         content:"\2299";
-        //         position: absolute;
-        //         font-size: em(24px);
-        //         left:49%;
-        //     }
-        // }
-    }
-    details {
-        width: 45%;
-        ul {
-            margin-left: 10%;
-        }
-        li {
-            list-style-type:disc;
-        }
-    }
+  }
 }
 
 .experiences__detail:nth-child(even) {
-    justify-content: flex-end;
-    // &::after {
-    //     @include breakpoint(laptop) {
-    //         content:"<";
-    //         position: relative;
-    //         font-size: em(24px);
-    //         right: 47%;
-    //     }
-    // }
+  justify-content: flex-end;
+  // &::after {
+  //     @include breakpoint(laptop) {
+  //         content:"<";
+  //         position: relative;
+  //         font-size: em(24px);
+  //         right: 47%;
+  //     }
+  // }
 }
 
 .experiences__detail:not(:nth-child(even)) {
-    justify-content: flex-start;
-    // &::before {
-    //     @include breakpoint(laptop) {
-    //         content:">";
-    //         position: relative;
-    //         font-size: em(24px);
-    //         left: 47%;
-    //     }
-    // } 
+  justify-content: flex-start;
+  // &::before {
+  //     @include breakpoint(laptop) {
+  //         content:">";
+  //         position: relative;
+  //         font-size: em(24px);
+  //         left: 47%;
+  //     }
+  // }
 }
 
 /* My Vision rules */
 
 .vision {
-    display: Grid;
-    grid-template: 0.125fr 0.5fr 0.5fr / 1fr;
-    height: 100vh;
+  display: Grid;
+  grid-template: 0.125fr 0.5fr 0.5fr / 1fr;
+  height: 100vh;
+  @include breakpoint(laptop) {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: $margin-bottom-page * 3;
+  }
+
+  p {
+    width: 80%;
+    margin: 0 auto;
+    padding: em(50px) 0;
     @include breakpoint(laptop) {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-bottom: $margin-bottom-page * 3;
+      width: 50%;
     }
-    
-    p {
-        width: 80%;
-        margin: 0 auto;
-        padding: em(50px) 0;
-        @include breakpoint(laptop) {
-            width: 50%;
-        }
-        
+  }
+
+  img {
+    max-width: em(200px);
+    margin: 0 auto;
+    display: block;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    @include breakpoint(laptop) {
+      @media (prefers-reduced-motion: no-preference) {
+        animation: fade-in $anim-duration ease-in-out;
+      }
     }
-    
-    img {
-        max-width: em(200px);
-        margin: 0 auto;
-        display: block;
-        border-top-left-radius: 50%;
-        border-top-right-radius: 50%;
-        border-bottom-left-radius: 5%;
-        border-bottom-right-radius: 5%;
-        @include breakpoint(laptop) {
-            @media(prefers-reduced-motion: no-preference) {
-                    animation: fade-in $anim-duration ease-in-out;
-            }
-        }
-    }
-    b, i{
-       font-weight: bolder;
-    }
+  }
+  b,
+  i {
+    font-weight: bolder;
+  }
 }

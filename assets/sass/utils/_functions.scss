@@ -5,17 +5,17 @@
 // Import if google fonts url is defined
 
 @if variable-exists($name: "font-url--google") {
-    @import url($font-url--google);
+  @import url($font-url--google);
 }
 
 // Compute em values
 
 @function em($target, $context: $base__font-size) {
-    @return math.div($target, $context) * 1em;
+  @return math.div($target, $context) * 1em;
 }
 
 // Call the color palette modifiers
 
 @function palette($palette, $shade: "base") {
-    @return map-get(map-get($palettes, $palette), $shade);
+  @return map-get(map-get($palettes, $palette), $shade);
 }

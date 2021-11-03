@@ -3,34 +3,34 @@
  ================================ */
 
 .btn {
-    display: flex;
-    text-decoration: none;
-    width: em(100px);
-    height: em(50px);
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    border-radius: em(10px);
-    background: palette(black, dark);
-    color: palette(white);
-    @include breakpoint(tablet) {
-        width: em(120px);
-        height: em(70px);
-        font-size: em(16px);
-    }
-    @include breakpoint(laptop) {
-        width: em(120px);
-        height: em(70px);
-        font-size: em(18px);
-    }
-    // @include breakpoint(desktop) {
-    //     width: em(140px);
-    //     height: em(80px);
-    //     font-size: em(20px);
-    // }
+  display: flex;
+  text-decoration: none;
+  width: em(100px);
+  height: em(50px);
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: em(10px);
+  background: palette(black, dark);
+  color: palette(white);
+  @include breakpoint(tablet) {
+    width: em(120px);
+    height: em(70px);
+    font-size: em(16px);
+  }
+  @include breakpoint(laptop) {
+    width: em(120px);
+    height: em(70px);
+    font-size: em(18px);
+  }
+  // @include breakpoint(desktop) {
+  //     width: em(140px);
+  //     height: em(80px);
+  //     font-size: em(20px);
+  // }
 }
 
 .btn:hover {
-    background: palette(white, dark);
-    color: palette(black, base);
+  background: palette(white, dark);
+  color: palette(black, base);
 }
