@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="description" content="Author: Frank Pouassi, Fullstack Web Developer And Data Analyst Portfolio">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,12 +29,10 @@
         </label>
         <nav role="menu">
           <ul>
-            <li class="nav__link nav__link--active">
-              <a href="index.html">Home</a>
-            </li>
-            <li class="nav__link"><a href="#projects">Projects</a></li>
-            <li class="nav__link"><a href="#about">About</a></li>
-            <li class="nav__link"><a href="#contact">Contact</a></li>
+            <li role="menuitem"   class="nav__link nav__link--active"><a href="index.html">Home</a></li>
+            <li role="menuitem" class="nav__link"><a href="#projects">Projects</a></li>
+            <li role="menuitem" class="nav__link"><a href="#about">About</a></li>
+            <li role="menuitem" class="nav__link"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -43,13 +42,13 @@
     <main class="main">
       <p class="main__p">
         Hi, I'm <span>Steff</span><br />A Full-Stack developer &amp; Data
-        Analyst
+        Analyst.
       </p>
       <p class="main__p--sub">
         Responsive Design, Accessibility, Precision, and Accuracy are my main
-        focus
+        focus.
       </p>
-      <a href="#about" class="btn main__btn">Learn More</a>
+      <a href="#about" class="btn main__btn">Learn More About Me</a>
     </main>
 
     <!--Projects section-->
@@ -63,7 +62,7 @@
           <a
             class="btn"
             href="https://github.com/furawa/Data_Analyst_Udacity_Projects/tree/master/05_Communicate_Data"
-            >More</a
+            >More in Github</a
           >
         </div>
       </div>
@@ -73,7 +72,7 @@
           <a
             class="btn"
             href="https://github.com/furawa/Data_Analyst_Udacity_Projects/tree/master/03_analyze_AB_test"
-            >More</a
+            >More in Github</a
           >
         </div>
       </div>
@@ -83,17 +82,17 @@
           <a
             class="btn"
             href="https://github.com/furawa/OC_data_analyst_projects/blob/master/01_public_health_study/public_health_study_presentation.pdf"
-            >More</a
+            >More in Github</a
           >
         </div>
       </div>
       <div role="img" aria-labelledby="desc-4" class="p__container p__project4">
         <div role="group" class="p__container--sub">
-          <p id="desc-4">Javascript<br />A simple interest Calculator</p>
+          <p id="desc-4">Javascript<br/>A simple interest Calculator</p>
           <a
             class="btn"
             href="https://furawa.github.io/vftvk-Simple-Interest-Calculator/"
-            >More</a
+            >Go to The App</a
           >
         </div>
       </div>
@@ -105,14 +104,14 @@
           <a
             class="btn"
             href="https://public.tableau.com/app/profile/frank.steff/viz/World_bank_story/World_bank"
-            >More</a
+            >Tableau Public</a
           >
         </div>
       </div>
       <div role="img" aria-labelledby="desc-6" class="p__container p__project6">
         <div role="group" class="p__container--sub">
-          <p id="desc-6">Coming Soon!</p>
-          <a class="btn">More</a>
+          <p id="desc-6">Javascript<br/>A simple Guesser Game</p>
+          <a class="btn" href="https://furawa.github.io/guesserGame/">Go to The App</a>
         </div>
       </div>
     </section>
@@ -124,10 +123,14 @@
         <h3>Some of my Strengths</h3>
         <figure class="strengths__fig1">
           <figcaption><h4>I am a Learner</h4></figcaption>
-          <img
-            src="assets/images/my_strenghts/learner.jpg"
-            alt="Image representing the love to learn"
-          />
+          <picture>
+            <source type="image/webp" srcset="./assets/images/my_strengths/learner.webp">
+            <source type="image/jpeg" srcset="./assets/images/my_strengths/learner.jpg">
+            <img
+              src="./assets/images/my_strengths/learner.jpg"
+              alt="Yellow signboard showing the Love to Learn direction"
+            />
+          </picture>
         </figure>
         <p class="strengths__p1">
           A great day for me is one during which I have added new insights to my
@@ -139,31 +142,40 @@
         </p>
         <figure class="strengths__fig2">
           <figcaption><h4>I am Curious</h4></figcaption>
-          <img
-            class="strengths--right"
-            src="assets/images/my_strenghts/input.jpg"
-            alt="Image representing the curiosity"
-          />
+          <picture>
+            <source type="image/webp" srcset="./assets/images/my_strengths/input.webp"> 
+            <source type="image/jpeg" srcset="./assets/images/my_strengths/input.jpg"> 
+            <img
+              class="strengths--right"
+              src="./assets/images/my_strengths/input.jpg"
+              alt="Stay curious signboard near of stack of books"
+            />
+          </picture>
+          
         </figure>
         <p class="strengths--left strengths__p2">
           My love of learning is also driven by my Curiosity. I love to gather
           all sorts of information (from philosophy to mathematics), I love to
           learn new things even if this means getting out of my comfort zone.<br />
-          I am eager to use all those information as soon as I can because for
-          me <q>&#10077;Knowledge is power only if it is used.&#10078;</q>
+          I am eager to use all those information as soon as I can because I believe that
+          <q>&#10077;Knowledge is power only if it is used.&#10078;</q>
         </p>
         <figure class="strengths__fig3">
           <figcaption><h4>I am a Problem solver</h4></figcaption>
-          <img
-            src="assets/images/my_strenghts/restorative.jpg"
-            alt="Image representing a puzzle"
-          />
+          <picture>
+            <source type="image/webp" srcset="./assets/images/my_strengths/restorative.webp">
+            <source type="image/jpeg" srcset="./assets/images/my_strengths/restorative.jpg">
+            <img
+              src="./assets/images/my_strengths/restorative.jpg"
+              alt="One piece missing to complete a puzzle"
+            />
+          </picture>
         </figure>
         <p class="strengths__p3">
           I am determined to gain insights from my mistakes so that I don't
           repeat them.<br />
           I am always looking for a better way to do something I have already
-          done.<br />
+          done.<br/>
           This is an important skill I would like to master because I think we
           are solving problems every day.
         </p>
@@ -271,13 +283,14 @@
           >
           about it.
         </p>
-        <img src="assets/images/my_strenghts/uniqueness.jpg" alt="" />
+        <img src="assets/images/my_strengths/uniqueness.jpg" alt="A unique yellow rocket between gray hot air balloons" />
       </section>
     </section>
 
     <!--contact section-->
     <section id="contact" class="contact">
       <h2>Get In Touch</h2>
+      <span class="hint">* - required field</span>
       <form class="form" action="index.html" method="POST">
         <label class="form__label" for="name">Name*</label>
         <input
@@ -317,14 +330,14 @@
           required
           autocomplete="off"
         >
-          <option value="">--Please choose an option--</option>
+          <option class="opt-choose" value="">--Please choose an option--</option>
           <optgroup label="Web Development">
             <option value="frontend">Front-end Developer</option>
             <option value="backend">Back-end Developer</option>
             <option value="fullstack">FullStack Developer</option>
           </optgroup>
           <optgroup label="Data">
-            <option value="Data Analysis">Data Analysis</option>
+            <option value="Data Analysis">Data Analyst</option>
             <option value="Data Scientist">Data Scientist</option>
           </optgroup>
           <optgroup label="Other">

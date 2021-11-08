@@ -13,6 +13,7 @@
   border-radius: em(10px);
   background: palette(black, dark);
   color: palette(white);
+  text-align: center;
   @include breakpoint(tablet) {
     width: em(120px);
     height: em(70px);

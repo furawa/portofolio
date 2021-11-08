@@ -92,7 +92,9 @@ h1 a:hover {
   background-color: #797e83;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   text-align: center;
   font-family: "Rubik", Arial, Sans-serif;
 }
@@ -155,6 +157,7 @@ h4 {
 }
 
 img {
+  height: auto;
   width: 100%;
 }
 
@@ -172,6 +175,7 @@ img {
   border-radius: 0.625em;
   background: black;
   color: #fff;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .btn {
@@ -363,21 +367,20 @@ nav a:hover {
   border: 0.1875em solid #0b0b0b;
   border-radius: 0.875em;
   background: #fff;
-  font-size: 0.875em;
   justify-content: space-around;
 }
 .form__label {
   align-self: flex-start;
   display: block;
   position: relative;
-  top: 1.375em;
-  margin-left: 1.875em;
+  margin-left: 1.25em;
 }
-@media screen and (min-width: 992px) {
-  .form__label {
-    top: 3%;
-    margin-left: 8%;
-  }
+.form textarea {
+  padding-left: 0.625em;
+}
+.form textarea:focus {
+  outline: 3px solid #797e83;
+  border: 0.0625em solid #0b0b0b;
 }
 @media screen and (min-width: 992px) {
   .form textarea {
@@ -387,7 +390,7 @@ nav a:hover {
 .form__input {
   width: 90%;
   font-size: 1.125em;
-  padding: 0.8333333333em;
+  padding-left: 0.625em;
   border-radius: 0.875em;
   background: #e3e4e5;
   color: black;
@@ -397,18 +400,18 @@ nav a:hover {
 @media screen and (min-width: 992px) {
   .form__input {
     height: 10%;
-    top: 1.875em;
   }
 }
 .form__input:focus {
-  outline: none;
-}
-.form__input::placeholder {
-  font-size: 0.8125em;
+  outline: 3px solid #797e83;
+  border: 0.0625em solid #0b0b0b;
 }
 .form__btn {
   width: 90%;
   margin: 0.75em 0;
+}
+.form .opt-choose {
+  text-align: center;
 }
 
 /*==========================================
@@ -827,7 +830,8 @@ nav a:hover {
     animation: fade-in 4s ease-in-out;
   }
 }
-.vision b, .vision i {
+.vision b,
+.vision i {
   font-weight: bolder;
 }
 
@@ -940,6 +944,10 @@ nav a:hover {
   .contact__email img:hover {
     filter: invert(43%) sepia(57%) saturate(6312%) hue-rotate(346deg) brightness(96%) contrast(79%);
   }
+}
+
+.hint {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
